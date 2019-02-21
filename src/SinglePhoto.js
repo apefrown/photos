@@ -16,7 +16,7 @@ class SinglePhoto extends Component {
       } = this.props;
     fetch(`http://jsonplaceholder.typicode.com/photos/${id}`)
       .then(response => response.json())
-      .then(photo => this.setState({photo: photo}));
+      .then(photo => this.setState({ photo }));
   }
 
   render() {
